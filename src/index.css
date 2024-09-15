@@ -17,51 +17,14 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings */
-h1, h2, h3 {
-  color: var(--oxford-blue);  /* Strong heading color */
-}
-
-/* Links */
-a {
-  color: var(--trinidad);     /* Bright color for links */
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--san-juan);     /* Slight hover effect */
-}
-
-/* Buttons */
-button {
-  background-color: var(--trinidad); /* Bright orange for buttons */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: var(--mule-fawn); /* Darker red hover effect */
-}
-
-/* Global button styling */
-button, .btn {
-  background-color: var(--trinidad); /* Use the color from your palette */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px; /* Rounded corners */
-  cursor: pointer;
-  font-size: 1.1em;
-  transition: background-color 0.3s ease;
-}
-
-button:hover, .btn:hover {
-  background-color: var(--mule-fawn); /* Darker color for hover effect */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

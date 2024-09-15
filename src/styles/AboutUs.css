@@ -1,62 +1,83 @@
-.about-container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: var(--mortar);
-}
-
-h1 {
-  color: var(--oxford-blue);
-  font-size: 2em;
-}
-
-p {
-  line-height: 1.6;
-  margin-bottom: 1em;
-}
-
-blockquote {
-  font-style: italic;
-  color: var(--roman-coffee);
-  padding: 10px 20px;
-  border-left: 4px solid var(--trinidad);
-  margin: 20px 0;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: var(--mortar);
-}
-
-h2 {
-  color: var(--oxford-blue);
-  margin-top: 1.5em;
-}
-
-.call-to-action {
-  margin-top: 2em;
-  text-align: center;
-  background-color: var(--chathams-blue-alt);
-  padding: 20px;
-  border-radius: 8px;
-  color: white;
-}
-
-.call-to-action h2 {
-  margin-bottom: 0.5em;
-}
-
-.contact-button {
-  background-color: var(--trinidad);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 20px;
-  font-size: 1.1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-  background-color: var(--mule-fawn);
-}
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-text h1 {
+    font-size: 3em;
+  }
+  
+  .hero-text p {
+    font-size: 1.5em;
+  }
+  
+  /* About Content Section */
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5em;
+  }
+  
+  .about-text blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .adam-image {
+    width: 80%;
+    border-radius: 10px;
+  }
+  
+  /* Call to Action */
+  .cta-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+  }
+  
+  .cta-section button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .cta-section button:hover {
+    background-color: #555;
+  }
+  
