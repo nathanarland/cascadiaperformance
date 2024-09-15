@@ -6,7 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
+import Contact from './components/Contact'; // Contact page import
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} /> {/* Contact route */}
       </Routes>
     </Router>
   );
