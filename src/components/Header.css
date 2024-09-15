@@ -1,0 +1,67 @@
+/* Header container styling */
+.header {
+    background-color: var(--oxford-blue); /* Dark background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Even space between logo and links */
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Logo styling */
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Navigation styling */
+  nav {
+    flex: 2;
+  }
+  
+  .nav-links {
+    list-style-type: none; /* Remove the bullet points */
+    display: flex; /* Display the list items in a horizontal row */
+    justify-content: flex-end; /* Align links to the right */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px; /* Add space between each link */
+  }
+  
+  /* Link styling */
+  .nav-links a {
+    color: var(--trinidad); /* Bright color for links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .nav-links a:hover {
+    color: var(--san-juan); /* Slight hover effect */
+  }
+  
+  /* Responsive design for mobile (stack vertically) */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; /* Reduced gap for mobile */
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+  

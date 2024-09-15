@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --trinidad: #f35b04;         /* Bright orange */
+  --chathams-blue: #143c74;    /* Deep blue */
+  --roman-coffee: #714942;     /* Rich brown */
+  --mule-fawn: #944e34;        /* Deep red/brown */
+  --mortar: #4c4454;           /* Grayish purple */
+  --oxford-blue: #3c445e;      /* Dark blue */
+  --san-juan: #2c4464;         /* Muted blue */
+  --biscay: #1c3c6c;           /* Deep navy */
+  --chathams-blue-alt: #143c78; /* Slightly lighter variant */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Global styles */
+body {
+  background-color: #f9f9f9;  /* Light neutral background */
+  color: var(--mortar);       /* General text color */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--oxford-blue);  /* Strong heading color */
+}
+
+/* Links */
+a {
+  color: var(--trinidad);     /* Bright color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--san-juan);     /* Slight hover effect */
+}
+
+/* Buttons */
+button {
+  background-color: var(--trinidad); /* Bright orange for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--mule-fawn); /* Darker red hover effect */
 }
