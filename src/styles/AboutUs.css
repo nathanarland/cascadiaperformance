@@ -55,7 +55,7 @@
 .cta-section {
   text-align: center;
   padding: 50px;
-  background: linear-gradient(135deg, #143c74, #2c4464);
+  background-color: var(--oxford-blue); /* Matches header color */
   color: white;
   border-radius: 8px;
   margin-top: 30px;
@@ -63,12 +63,13 @@
 
 .cta-section h2 {
   font-size: 2em;
-  color: #143c74;
+  color: #f9f9f9; /* Light color for readability on dark background */
   margin-bottom: 10px;
 }
 
 .cta-section p {
   font-size: 1.2em;
+  color: #e0e0e0; /* Slightly lighter text for readability */
   margin-bottom: 20px;
 }
 
