@@ -1,46 +1,5 @@
 /* AboutUs.css */
 
-/* Hero Section */
-.hero-section {
-  position: relative;
-  text-align: center;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  opacity: 0.7;
-  filter: grayscale(20%);
-}
-
-/* Hero Text Overlay */
-.hero-overlay {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #143c74; /* Deep blue for contrast */
-  font-family: 'Merriweather', serif;
-  background: rgba(255, 255, 255, 0.8); /* Light background with slight transparency */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
-}
-
-.hero-overlay h1 {
-  font-size: 3em;
-  font-weight: bold;
-  color: #143c74; /* Matches brand color */
-  margin: 0;
-}
-
-.hero-overlay p {
-  font-size: 1.2em;
-  color: #714942; /* Soft brown for contrast */
-  margin-top: 10px;
-}
-
 /* About Content Section */
 .about-content {
   display: flex;
@@ -48,7 +7,7 @@
   padding: 50px;
   font-family: 'Open Sans', sans-serif;
   background-color: #f9f9f9;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
@@ -89,7 +48,7 @@
 .adam-image {
   width: 80%;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a shadow to the image */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Call to Action Section */
@@ -104,6 +63,7 @@
 
 .cta-section h2 {
   font-size: 2em;
+  color: #143c74;
   margin-bottom: 10px;
 }
 
@@ -114,7 +74,7 @@
 
 .cta-section button {
   padding: 15px 30px;
-  background-color: #f35b04; /* Bright orange for a pop of color */
+  background-color: #f35b04;
   color: white;
   border: none;
   font-size: 1.2em;
@@ -124,5 +84,5 @@
 }
 
 .cta-section button:hover {
-  background-color: #d94b00; /* Darker orange on hover */
+  background-color: #d94b00;
 }

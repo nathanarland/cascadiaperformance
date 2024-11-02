@@ -4,15 +4,6 @@ import '../styles/AboutUs.css'; // Ensure AboutUs.css is in the correct styles f
 function AboutUs() {
   return (
     <div className="about-us">
-      {/* Hero Section */}
-      <div className="hero-section">
-        <img src="path-to-hero-image.jpg" alt="Hero" className="hero-image" />
-        <div className="hero-overlay">
-          <h1>Cascadia Performance</h1>
-          <p>Established in 2024: Crafting Sustainable, High-Performance Construction Solutions</p>
-        </div>
-      </div>
-
       {/* About Section Content */}
       <div className="about-content">
         <div className="about-text">
@@ -26,9 +17,6 @@ function AboutUs() {
           <blockquote>
             “At Cascadia Performance, my focus is on creating sustainable, high-performance building solutions.”
           </blockquote>
-          <p>
-            I’m committed to staying at the forefront of innovative design and construction practices, continually expanding my knowledge through industry education and collaborating with like-minded professionals. With my CCB license secured and a growing network of clients, I’m excited to offer personalized, high-quality services that meet the evolving needs of both residential and commercial clients.
-          </p>
           <p>
             Cascadia Performance Contracting was officially established by me, Adam Leckie, in 2024. As a native Oregonian with extensive experience in Portland's residential remodeling industry, I bring a deep network of resources and expertise to every project. My goal is to deliver high-quality renovations at competitive prices, guiding clients on how to make improvements that enhance the livability, health, and value of their homes. From initial concept to permitted plans and construction completion, Cascadia Performance is here to help you achieve your vision.
           </p>
