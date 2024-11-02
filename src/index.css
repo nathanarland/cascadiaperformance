@@ -1,3 +1,6 @@
+
+/* index.css */
+
 :root {
   --trinidad: #f35b04;         /* Bright orange */
   --chathams-blue: #143c74;    /* Deep blue */
@@ -14,23 +17,38 @@
 body {
   background-color: #f9f9f9;  /* Light neutral background */
   color: var(--mortar);       /* General text color */
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif; /* Updated font */
   line-height: 1.6;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--oxford-blue); /* Dark blue for headings */
+  margin-bottom: 0.5em;
 }
 
-/* Add to index.css */
+h1 {
+  font-size: 2.5em;
+}
 
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+/* Code block */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Global Button Styling */
 button {
   padding: 10px 20px;
   background-color: var(--trinidad); /* Bright orange */
@@ -38,6 +56,7 @@ button {
   border: none;
   border-radius: 5px;
   font-size: 1em;
+  font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
