@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
-import Contact from './components/Contact'; // Contact page import
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<Contact />} /> {/* Contact route */}
+        <Route path="/contact" element={<Contact />} /> {/* Contact Route */}
       </Routes>
     </Router>
   );

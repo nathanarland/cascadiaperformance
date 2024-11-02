@@ -28,3 +28,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Add to index.css */
+
+button {
+  padding: 10px 20px;
+  background-color: var(--trinidad); /* Bright orange */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--san-juan); /* Muted blue for hover */
+}
