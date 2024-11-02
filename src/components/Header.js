@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="logo-container">
         <Link to="/">
-          <img src="/Users/Suitcase/Documents/Repos/performance-suitcase/src/assets/Horizontal.png" alt="Cascadia Performance Logo" className="logo" />
+          <img src="src/assets/Horizontal.png" alt="Cascadia Performance Logo" className="logo" />
         </Link>
       </div>
       <nav>
