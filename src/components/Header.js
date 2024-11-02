@@ -1,19 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Header.css'; // Ensure the path matches where Header.css is located
+import logo from '../assets/Horizontal.png'; // Adjust the path if necessary
+import '../styles/Header.css';
 
 function Header() {
   return (
     <header className="header">
       <div className="logo-container">
-        <Link to="/">
-          <img src="src/assets/Horizontal.png" alt="Cascadia Performance Logo" className="logo" />
-        </Link>
+        <img src={logo} className="logo" alt="Cascadia Performance Logo" />
       </div>
       <nav>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
+          <li><Link to="/about">About Us</Link></li>
           <li><Link to="/services">Services</Link></li>
           <li><Link to="/portfolio">Portfolio</Link></li>
           <li><Link to="/testimonials">Testimonials</Link></li>
