@@ -4,8 +4,7 @@
 .hero-section {
   position: relative;
   text-align: center;
-  color: #fff;
-  font-family: 'Merriweather', serif; /* Use a professional serif font */
+  color: #333; /* Dark color for readability */
 }
 
 .hero-image {
@@ -14,25 +13,28 @@
   opacity: 0.8;
 }
 
-.hero-text {
+.hero-overlay {
   position: absolute;
-  top: 50%;
+  top: 60%; /* Adjusted to appear below the banner header */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #333; /* Dark color */
+  font-family: 'Merriweather', serif; /* Professional and readable font */
 }
 
-.hero-text h1 {
+.hero-overlay h1 {
   font-size: 3em;
   font-weight: bold;
-  color: #fff;
+  color: #143c74; /* Deep blue for a professional look */
   margin: 0;
 }
 
-.hero-text p {
+.hero-overlay p {
   font-size: 1.2em;
-  color: #e0e0e0;
+  color: #714942; /* Rich brown for a warm, contrasting look */
   font-weight: 400;
+  margin-top: 10px;
 }
 
 /* About Content Section */
@@ -40,7 +42,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
-  font-family: 'Open Sans', sans-serif; /* A clean sans-serif for readability */
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about-text {
