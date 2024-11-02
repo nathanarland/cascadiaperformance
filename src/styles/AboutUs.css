@@ -4,36 +4,40 @@
 .hero-section {
   position: relative;
   text-align: center;
-  color: #333; /* Dark color for readability */
 }
 
 .hero-image {
   width: 100%;
   height: auto;
-  opacity: 0.8;
+  opacity: 0.7;
+  filter: grayscale(20%);
 }
 
+/* Hero Text Overlay */
 .hero-overlay {
   position: absolute;
-  top: 60%; /* Adjusted to appear below the banner header */
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #333; /* Dark color */
-  font-family: 'Merriweather', serif; /* Professional and readable font */
+  color: #143c74; /* Deep blue for contrast */
+  font-family: 'Merriweather', serif;
+  background: rgba(255, 255, 255, 0.8); /* Light background with slight transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
 }
 
 .hero-overlay h1 {
   font-size: 3em;
   font-weight: bold;
-  color: #143c74; /* Deep blue for a professional look */
+  color: #143c74; /* Matches brand color */
   margin: 0;
 }
 
 .hero-overlay p {
   font-size: 1.2em;
-  color: #714942; /* Rich brown for a warm, contrasting look */
-  font-weight: 400;
+  color: #714942; /* Soft brown for contrast */
   margin-top: 10px;
 }
 
@@ -43,6 +47,9 @@
   flex-wrap: wrap;
   padding: 50px;
   font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px;
 }
 
 .about-text {
@@ -53,14 +60,26 @@
 .about-text h2 {
   font-size: 2.5em;
   color: #333;
+  border-bottom: 2px solid #143c74;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.8;
 }
 
 .about-text blockquote {
   font-size: 1.2em;
   font-style: italic;
-  color: #666;
+  color: #714942;
+  border-left: 4px solid #143c74;
+  padding-left: 15px;
+  margin: 20px 0;
 }
 
+/* About Image Section */
 .about-image {
   flex: 1;
   display: flex;
@@ -70,25 +89,40 @@
 .adam-image {
   width: 80%;
   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a shadow to the image */
 }
 
-/* Call to Action */
+/* Call to Action Section */
 .cta-section {
   text-align: center;
   padding: 50px;
-  background-color: #f7f7f7;
+  background: linear-gradient(135deg, #143c74, #2c4464);
+  color: white;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.cta-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 .cta-section button {
   padding: 15px 30px;
-  background-color: #143c74;
+  background-color: #f35b04; /* Bright orange for a pop of color */
   color: white;
   border: none;
   font-size: 1.2em;
   cursor: pointer;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .cta-section button:hover {
-  background-color: #2c4464;
+  background-color: #d94b00; /* Darker orange on hover */
 }

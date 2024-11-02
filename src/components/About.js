@@ -7,9 +7,9 @@ function AboutUs() {
       {/* Hero Section */}
       <div className="hero-section">
         <img src="path-to-hero-image.jpg" alt="Hero" className="hero-image" />
-        <div className="hero-text">
+        <div className="hero-overlay">
           <h1>Cascadia Performance</h1>
-          <p>Crafting Sustainable, High-Performance Construction Solutions for Over 13 Years</p>
+          <p>Established in 2024: Crafting Sustainable, High-Performance Construction Solutions</p>
         </div>
       </div>
 
