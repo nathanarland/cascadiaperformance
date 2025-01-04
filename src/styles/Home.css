@@ -1,0 +1,17 @@
+.get-in-touch-button {
+    padding: 15px 30px;
+    background-color: var(--trinidad); /* Bright orange */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .get-in-touch-button:hover {
+    background-color: var(--san-juan); /* Muted blue for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  

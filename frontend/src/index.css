@@ -1,0 +1,66 @@
+
+/* index.css */
+
+:root {
+  --trinidad: #f35b04;         /* Bright orange */
+  --chathams-blue: #143c74;    /* Deep blue */
+  --roman-coffee: #714942;     /* Rich brown */
+  --mule-fawn: #944e34;        /* Deep red/brown */
+  --mortar: #4c4454;           /* Grayish purple */
+  --oxford-blue: #3c445e;      /* Dark blue */
+  --san-juan: #2c4464;         /* Muted blue */
+  --biscay: #1c3c6c;           /* Deep navy */
+  --chathams-blue-alt: #143c78; /* Slightly lighter variant */
+}
+
+/* Global styles */
+body {
+  background-color: #f9f9f9;  /* Light neutral background */
+  color: var(--mortar);       /* General text color */
+  font-family: 'Poppins', sans-serif; /* Updated font */
+  line-height: 1.6;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--oxford-blue); /* Dark blue for headings */
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+/* Code block */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Global Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: var(--trinidad); /* Bright orange */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--san-juan); /* Muted blue for hover */
+}
