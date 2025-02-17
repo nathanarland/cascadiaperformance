@@ -1,6 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* index.css */
-
+/* Custom Global Styles */
 :root {
   --trinidad: #f35b04;         /* Bright orange */
   --chathams-blue: #143c74;    /* Deep blue */
@@ -13,54 +15,53 @@
   --chathams-blue-alt: #143c78; /* Slightly lighter variant */
 }
 
-/* Global styles */
+/* Body Styling */
 body {
-  background-color: #f9f9f9;  /* Light neutral background */
-  color: var(--mortar);       /* General text color */
-  font-family: 'Poppins', sans-serif; /* Updated font */
-  line-height: 1.6;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-100 text-gray-700 font-sans;
 }
 
 /* Heading styles */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  color: var(--oxford-blue); /* Dark blue for headings */
-  margin-bottom: 0.5em;
+h1, h2, h3 {
+  @apply font-bold text-[var(--oxford-blue)];
 }
 
-h1 {
-  font-size: 2.5em;
+/* Section Styling */
+section {
+  @apply py-16 text-center;
 }
 
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.75em;
-}
-
-/* Code block */
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-/* Global Button Styling */
+/* Button Styling */
 button {
-  padding: 10px 20px;
-  background-color: var(--trinidad); /* Bright orange */
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  @apply px-4 py-2 bg-[var(--trinidad)] text-white font-semibold rounded-md transition-all;
 }
 
 button:hover {
-  background-color: var(--san-juan); /* Muted blue for hover */
+  @apply bg-[var(--san-juan)];
+}
+
+/* Header */
+.header {
+  @apply fixed w-full bg-white shadow-md p-4 z-50 flex justify-between items-center;
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-800 text-white text-center p-6 mt-12;
+}
+
+
+/* ✅ REMOVE UNWANTED MARGINS & PADDING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ BODY & HTML RESET */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
