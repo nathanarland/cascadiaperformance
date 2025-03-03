@@ -11,3 +11,27 @@
 .container {
   @apply max-w-7xl mx-auto px-6;
 }
+
+/* ✅ Section Styling */
+.section {
+  padding: 50px 20px;
+  background-color: #2A2D34; /* Dark Gray for a sleek, professional look */
+  color: white;
+  text-align: center;
+}
+
+/* ✅ Section Titles */
+.section h3 {
+  color: #F05A28; /* Matches brand color */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ✅ Section Divider */
+.section-divider {
+  width: 50%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 30px auto;
+}

@@ -46,9 +46,9 @@ button:hover {
 
 /* Footer */
 .footer {
-  @apply bg-gray-800 text-white text-center p-6 mt-12;
+  @apply bg-gray-800 text-white text-center p-6;
+  margin-top: 0 !important; /* ✅ Remove extra white space above footer */
 }
-
 
 /* ✅ REMOVE UNWANTED MARGINS & PADDING */
 * {
@@ -64,4 +64,44 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+
+/* ✅ Section Styling */
+.section {
+  padding: 50px 20px;
+  background-color: #2A2D34; /* Dark Gray for a sleek, professional look */
+  color: white;
+  text-align: center;
+}
+
+/* ✅ Section Titles */
+.section h3 {
+  color: #F05A28; /* Matches brand color */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ✅ Section Divider */
+.section-divider {
+  width: 50%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 30px auto;
+}
+
+/* ✅ Remove White Space Between Last Section and Footer */
+#inspirations {
+  padding-bottom: 40px !important;
+}
+
+
+/* Footer Styling */
+footer {
+  width: 100%; /* ✅ Full width */
+  background-color: var(--oxford-blue);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: -20px !important; /* ✅ Pushes it to the bottom */
 }
