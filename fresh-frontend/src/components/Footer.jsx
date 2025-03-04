@@ -1,5 +1,5 @@
 import React from "react";
-import contractingLogo from "../assets/Round_contracting.png";
+import contractingLogo from "../assets/Round_Contracting.png";
 
 const Footer = () => {
   return (
