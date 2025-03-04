@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+:root {
+  --trinidad: #f35b04;         /* Bright orange */
+  --chathams-blue: #143c74;    /* Deep blue */
+  --roman-coffee: #714942;     /* Rich brown */
+  --mule-fawn: #944e34;        /* Deep red/brown */
+  --mortar: #4c4454;           /* Grayish purple */
+  --oxford-blue: #3c445e;      /* Dark blue */
+  --san-juan: #2c4464;         /* Muted blue */
+  --biscay: #1c3c6c;           /* Deep navy */
+  --chathams-blue-alt: #143c78; /* Slightly lighter variant */
+}
+
+/* Body Styling */
+body {
+  @apply bg-gray-100 text-gray-700 font-sans;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  @apply font-bold text-[var(--oxford-blue)];
+}
+
+/* Section Styling */
+section {
+  @apply py-16 text-center;
+}
+
+/* Button Styling */
+button {
+  @apply px-4 py-2 bg-[var(--trinidad)] text-white font-semibold rounded-md transition-all;
+}
+
+button:hover {
+  @apply bg-[var(--san-juan)];
+}
+
+/* Header */
+.header {
+  @apply fixed w-full bg-white shadow-md p-4 z-50 flex justify-between items-center;
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-800 text-white text-center p-6;
+  margin-top: 0 !important; /* ✅ Remove extra white space above footer */
+}
+
+/* ✅ REMOVE UNWANTED MARGINS & PADDING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ BODY & HTML RESET */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ✅ Section Styling */
+.section {
+  padding: 50px 20px;
+  background-color: #2A2D34; /* Dark Gray for a sleek, professional look */
+  color: white;
+  text-align: center;
+}
+
+/* ✅ Section Titles */
+.section h3 {
+  color: #F05A28; /* Matches brand color */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ✅ Section Divider */
+.section-divider {
+  width: 50%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 30px auto;
+}
+
+/* ✅ Remove White Space Between Last Section and Footer */
+#inspirations {
+  padding-bottom: 40px !important;
+}
+
+
+/* Footer Styling */
+footer {
+  width: 100%; /* ✅ Full width */
+  background-color: var(--oxford-blue);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: -20px !important; /* ✅ Pushes it to the bottom */
+}

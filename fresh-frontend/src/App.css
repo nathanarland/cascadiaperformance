@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure full height for main app container */
+#root {
+  @apply flex flex-col min-h-screen;
+}
+
+/* Ensure content takes full width */
+.container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
